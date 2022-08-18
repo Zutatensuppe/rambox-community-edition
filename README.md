@@ -118,6 +118,16 @@ Fork and work!
 
 ### Quickstart
 
+1. Install sencha-cmd (https://trials.sencha.com/cmd/7.5.1/jre/SenchaCmd-7.5.1.20-windows-64bit.zip)
+
+2. Install ruby (2.6.0-1)
+
+    Using scoop:
+
+    ```shell
+    scoop install ruby@2.6.0-1
+    ```
+
 ```shell
 git clone https://github.com/saenzramiro/rambox.git
 cd rambox
