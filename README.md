@@ -138,6 +138,12 @@ npm start
 
 See [Contributing.md](./CONTRIBUTING.md) for more detailed information about getting set up.
 
+### Troubleshooting
+
+#### Building on windows ends in `[object Object]`
+
+Be sure to stop sencha before building.
+
 ---
 
 ## Disclosure
