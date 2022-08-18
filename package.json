@@ -227,7 +227,6 @@
 	"dependencies": {
 		"@exponent/electron-cookies": "2.0.0",
 		"auto-launch-patched": "5.0.2",
-		"crypto": "1.0.1",
 		"electron-contextmenu-wrapper": "git+https://github.com/ramboxapp/electron-contextmenu-wrapper.git",
 		"electron-is-dev": "1.2.0",
 		"electron-log": "4.3.0",
