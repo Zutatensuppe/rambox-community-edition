@@ -236,6 +236,17 @@ Ext.define('Rambox.view.main.MainController', {
 		});
 	}
 
+	,toggleMuteAllSounds: function( gridView, rowIndex, colIndex, col, e, rec, rowEl ) {
+		rec.set({
+		  muted: !rec.get('muted')
+		});
+
+		var view = Ext.getCmp('tab_'+rec.get('id'));
+		view.setAudioMuted(rec.get('muted'));
+		view.record = rec;
+		view.tabConfig.service = rec;
+	}
+
 	,onSearchRender: function( field ) {
 		field.focus(false, 1000);
 	}

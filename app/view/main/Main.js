@@ -175,10 +175,19 @@ Ext.define('Rambox.view.main.Main', {
 									}
 								}
 								,{
-									 glyph: 0xf026
+									 glyph: 0xf1f7 // bell with slash through it
 									,tooltip: locale['app.main[12]']
+									,handler: 'toggleMuteAllSounds'
 									,getClass: function( value, metaData, record, rowIndex, colIndex, store, view ){
 										if ( !record.get('muted') ) return 'x-hidden';
+									}
+								}
+								,{
+									 glyph: 0xf0a2 // bell without a slash through it
+									,tooltip: 'Not muted'
+									,handler: 'toggleMuteAllSounds'
+									,getClass: function( value, metaData, record, rowIndex, colIndex, store, view ){
+										if ( record.get('muted') ) return 'x-hidden';
 									}
 								}
 							]
